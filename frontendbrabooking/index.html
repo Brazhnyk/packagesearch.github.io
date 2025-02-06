@@ -1,0 +1,82 @@
+<!-- jason als Tabelle (von IPI aufrufen) -->
+<!--  xhr(ajax) --> 
+
+<!DOCTYPE html>
+<html>
+	   <head>
+	   <meta charset="UTF-8">
+		   <title>Brabooking</title>
+            <link href="http://localhost:8088/Brabooking.css" rel="stylesheet" type="text/css">
+		      <link rel = "icon" href ="http://localhost:8088/Neues Projekt.png" type = "image/x-icon">
+	   </head>
+	<body>
+      <script src="http://localhost:8088/BrabookingScript.js" ></script>
+		   <h1 id="helloUser">Welcome to Brabooking!</h1>
+		   <div id="findIataDiv">
+            <form>     
+                <h4>
+                  <label  id="amountOfDays">If you need to find a hotel by airport of arrival, enter the IATA city code:</label>
+		            <input type="text"  id="arrivalPackages" size=13 placeholder="Iata code">
+				      <input type="button" id="submitIata" onclick="findIataFunc()"  value="Submit">          
+               </h4>  
+            </form>                
+         </div>        
+            <div id="resultIataDiv">             
+               <table  id="resultIataTable" border="3" >
+                  <input  id="buttonCloseIataTable" onclick="location.reload()" type="image" src="http://localhost:8088/button close.png" />
+                  <thead id="resultIataThead">
+                     <tr id="resultIataTr">
+                        <th>Id</th>
+                        <th>Flight company</th>
+                        <th>Departure airport</th>
+                        <th>Arrival airport</th>
+                        <th>Flight price</th>
+                        <th>Hotel name</th>
+                        <th>Hotel price</th>
+                     </tr>
+                  </thead>
+                     <tbody id="iataInput">
+                     </tbody>  
+                  </table>                                                               
+            </div>	
+		<div id="formOffers">
+			<form>
+			<h4 id="offersColor">To receive a list of offers, enter the following data:</h4>
+				<label  id="arrivalAirport">Arrival airport:</label>
+				<input  type=text size=3 id="arrivalOffers" placeholder="IATA code">
+				<label  id="howManyPers">How many Persons:</label>
+				<input  type=text size=3 id="personsOffers">
+				<label  id="amountOfDays">Amount of days:</label>
+				<input  type=text size=3 id="losOffers">
+				<input id="submitPackage" type="button" onclick="findOffersFunc()" value="Submit">
+			</form>	
+		 </div>     
+       <div id = "resultOffersDiv">
+         <table id="resultOffersTable" border="2" >
+            <input id="buttonCloseOffersTable" onclick="location.reload()" type="image" src="http://localhost:8088/button close.png">
+               <thead id="resultOffersThead">
+                  <tr class="table_block" id="offersTr">
+                     <th>Offer Id</th>
+                     <th>Flight company</th>
+                     <th>Departure airport</th>
+                     <th>Arrival airport</th>
+                     <th>Hotel Information</th>
+                     <th>Flight price</th>
+                     <th>Hotel price</th>
+                     <th>Total price</th>
+                  </tr>     
+                     </thead>
+            <tbody id="offersInput">
+            </tbody>
+         </table>  
+       </div> 	
+         <div id="booking2020">	   
+		 <footer >
+				<p>© Brabooking 2022</p>
+		 </footer>	
+      </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	</body>
+</html>
+
+

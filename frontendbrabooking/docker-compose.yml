@@ -1,0 +1,38 @@
+version: '3'
+services:
+  packagesearch: 
+    image: packagesearch
+    container_name: packagesearch
+    ports:
+    - "8080:8080"
+  hotelinfo:
+   container_name: hotelinfo
+   image: hotelinfo
+   ports:
+   - "8081:8081"
+  brabooking:
+    image: nginx
+    container_name: brabooking
+    ports:
+    - "8088:80"
+    volumes:
+      - type: bind
+        source: C:\Users\ArtemBrazhnyk\MyFirstVueProject\Website Brabooking
+        target: /usr/share/nginx/html
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: Brabooking
+      MONGO_INITDB_ROOT_PASSWORD: Brabooking
+      ME_CONFIG_MONGODB_ADMINUSERNAME: Brabooking
+      ME_CONFIG_MONGODB_ADMINPASSWORD: Brabooking
+      ME_CONFIG_MONGODB_URL: mongodb://Brabooking:Brabooking@mongo:27017/Brabooking?authSource=admin
+    ports:
+      - 2717:27017
+    volumes:
+      - /Mongodb/data:/data/db
+      
+
+  

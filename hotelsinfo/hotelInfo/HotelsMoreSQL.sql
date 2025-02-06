@@ -1,0 +1,1 @@
+SELECT * FROM Brabooking.hotel_details;

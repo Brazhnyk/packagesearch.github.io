@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+	
+    div:hover {
+    border: 5px;
+    }
+
+	
+#helloUser {
+   position: fixed;
+   font-family: "Amatic SC", cursive;
+   text-align: center;
+   color: gray;
+   font-size: xxx-large;
+   right: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+   top: 4%;
+}
+#inputList {
+   width: 100%;padding-left: 0%;
+}
+
+#s {
+   left: 30%;
+   right: 22%;
+   top: 93%;
+   position: absolute;
+   z-index: 9999;
+   background-color: #6f6c69;
+   width: 37%;
+   height: 61%;
+   border-radius: 100px;
+   border-color: #fbd489;
+   border-top-color: transparent;
+   margin-top: 0%;
+}
+
+#arrivalPackages {
+   text-align: right;
+
+}
+
+#findIataDiv {
+   position: fixed;
+   font-family: "Amatic SC", cursive;
+   text-align: center;
+   font-size: 20px;
+   color: #5f5e63;
+   letter-spacing: 1px;
+   text-align: center;
+   border-style: solid;
+   border-radius: 100px;
+   height: 1.8%;
+   width:670px;
+   margin: auto;
+   padding: 100px;
+   padding-top: 30px;
+   right: 27%;
+   left: 27%;
+   top: 17%;
+   background-color: #6f6c69;
+   border-color: beige;
+  }
+ 
+  input#buttonCloseIataTable {
+      position: fixed;
+      display: none;
+      size: 1%;
+      width: 30px;
+      height: 30px;
+      right: 4%;
+      top: 33%;
+      position: absolute;
+  }
+
+
+  input#buttonCloseOffersTable {
+   position: fixed;
+   display: none;
+   size: 1%;
+   width: 30px;
+   height: 30px;
+   right: 4%;
+   top: 27%;
+   position: absolute;
+  }
+  #iataInput,
+  #resultIataDiv,
+  #resultOffersDiv {
+     width: 10px ;   
+   }
+.test2 {
+   border: solid;
+   background-color: transparent;
+   width: 47%;
+   height: 1%;
+   padding: 15%;
+   padding-left: 25%;
+   padding-right: 26%;
+   position: absolute;
+   border-radius: 100px;
+   margin-left: -1%;
+   margin-top: 1.5%;
+   margin-right: 0%;
+   padding-bottom: 0%;
+   padding-top: 13%;
+   display: none;
+   left: 2%;
+   right: 2%;
+}
+
+#test3:hover {
+      color: #fff;   
+      font-weight: 700;
+}
+
+#tableIataHover:hover {
+   color: #fff;   
+      font-weight: 700;
+     
+}
+   
+  #resultIataTr, 
+  #resultOffersThead {
+     color: beige;
+     width:100%;
+     table-layout: fixed;
+     border-color: transparent;
+  }
+  #test, #a {
+     border-style: none;
+  }
+
+ .offersBorderOff {
+  border-style: double;
+  border-radius: 100px;
+  border-style: none;
+  }
+   #offersTr {
+      color: beige;
+   }
+   #offersColor {
+      color: beige;
+   }
+  .testCss{
+   background-color: #5b5b5d;
+   border-radius: 100px;
+   border: 3px;
+  }
+  #imgOffersBorder {
+  border: 5px solid wheat;
+  border-style: outset;
+  border-radius: 100px;
+  margin-left: 7%;
+  margin-right: 10%;
+  width: 90%;
+  margin-left: -6%;
+  margin-right: -6%;
+  }
+
+
+  #resultIataTable, #resultOffersTable {
+   border-color: #d3aa6c;
+   background-color: #6f6c69;
+   font-family: "Amatic SC", cursive;
+   text-align: center;
+   border-style: solid;
+   font-size: 21px;
+   color: #fbd489;
+   letter-spacing: 1px;
+   text-align: center;
+   border-radius: 100px;
+   width: 86%;
+   left: 7%;
+   right: 7%;
+   top: 33%;
+   margin-top: 4.5%;
+   padding: 70px;
+   padding-top: 2.5%;
+   padding-bottom: 2.5%;
+   position: absolute;
+   display: none;
+  }
+
+#formOffers {
+   position: fixed;
+   font-family: "Amatic SC", cursive;
+   font-size: 20px;
+   letter-spacing: 1px;
+   color: #5f5e63;
+   text-align: center;
+   border-style: solid;
+   border-radius: 100px;
+   margin-top: 3%;
+   padding: 100px;
+   padding-top: 2%;
+   padding-bottom: 3%;
+   right: 19%;
+   left: 19%;
+   top: 35%;
+   background-color: #6f6c69;
+   border-color: beige;
+}
+
+#arrivalAirport,
+#howManyPers,
+#amountOfDays {
+	 color: beige;
+	 font-weight: 700;
+}
+
+#arrivalPackages,
+#arrivalOffers, 
+#personsOffers, 
+#losOffers, 
+#submitIata,
+#submitPackage {
+   border-style: outset;
+   border-radius: 100px;
+   font-family: "Amatic SC", cursive;
+   text-align: center;
+   font-size: 20px;
+   color: black;
+}
+
+#booking2020 {
+ position: fixed;
+ right: 47%;
+ left: 45%;
+ top: 74%;
+ text-align: center;
+ font-family: "Amatic SC", cursive;
+ margin-top: 10%;
+ letter-spacing: 3px;
+ color: dimgray;
+ font-weight: 700;
+ width: 12%;
+}
+input[type=text] {
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+body, html{
+height: 99%;
+background-image: url("https://bogatyr.club/uploads/posts/2021-11/thumbs/1636918841_48-bogatyr-club-p-fon-puteshestviya-51.jpg");
+
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-attachment: fixed;
+}
+
+#here, #andHere {
+color: white;
+}
+
+  tr {
+   border-radius: 100px;
+   color: #fbd489;
+   box-shadow: 0 0 3px 0px black;
+   border-style: inset;
+   padding: 30px;
+   margin-right: 6%;
+   margin-left: 6%;
+   padding-right: 2%;
+   padding-left: 19%;
+   display: table-row;
+ }
+
+
